@@ -3,23 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width">
-
-  <title>368 Website Starter</title>
- 
+  <link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
+  <title>P3: Trailer</title>
   <link rel="stylesheet" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css">  
   <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/styles.css">	
-	
+  <link rel="stylesheet" href="css/mediaplayer.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-	
-	<h1>368 Website Starter</h1>
-
-	
-
+<body style="background: url('file:///C:/Users/Audrey/Desktop/p3-trailer/img/cinemaparadisos.jpg')">
+  <!-- 1st Row -->
+	<div class="grid-container">
+    <div class="grid-12">
+      <!-- Change value to your video height & width -->
+      <video class="mejs-378" height="720" width="1280" controls>
+        <!--* Sample Video URL for testing. YouTube video is big w/o a CDN
+        * Change to your final video before going live
+        * URL: http://bit.ly/1JxF22L-->  
+        <source src="video/CinPar.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <!-- 2nd Row -->
+  <div class="grid-container">
+    <!-- 2nd Row: 1st Column -->
+    <div class="grid-6">
+        <h1>Cinema Paradiso</h1>
+        <p>A filmmaker recalls his childhood, when he fell in love with the movies at his village's theater and formed a deep friendship with the theater's projectionist.</p>
+    </div>
+    <!-- 2nd Row: 2nd Column -->
+    <div class="grid-6">
+        <h3>Credits</h3>
+        <ul>
+          <li>Directed by: Giuseppe Tornatore</li>
+          <li>Story by: Giuseppe Tornatore</li>
+          <li>Screenplay by: Giuseppe Tornatore</li>
+          <li>Starring:</li>
+          <li>Philippe Noiret</li>
+          <li>Salvatore Cascio</li>
+          <li>Marco Leonardi</li>
+          <li>Agnese Nano</li>
+          <li>Jacques Perrin</li>
+        </ul>
+        <!--<p></p>-->
+    </div>
+  </div>
 <!-- Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  	<script type="text/javascript" src="js/scripts.js"></script>
-
+  <script type="text/javascript" src="js/mediaplayer.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 </body>
+<footer>Background image from: http://host2post.com/wallpapers/MAKING</footer>
 </html>
